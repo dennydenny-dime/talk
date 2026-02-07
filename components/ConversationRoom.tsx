@@ -46,7 +46,7 @@ const ConversationRoom: React.FC<ConversationRoomProps> = ({ persona, onExit }) 
   useEffect(() => {
     const initSession = async () => {
       try {
-        const apiKey = process.env.API_KEY;
+        const apiKey = process.env.NEXT_PUBLIC_API_KEY;
         if (!apiKey) {
           setError("Neural system error: API Key is missing. Please select a key from a paid project.");
           return;
